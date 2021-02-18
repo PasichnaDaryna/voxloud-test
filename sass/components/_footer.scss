@@ -1,12 +1,12 @@
 .footer {
     background-color: $dark-blue;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
 }
 
 .for-footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footerNav-list {

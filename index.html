@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/df7e9a4c83.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
@@ -20,7 +19,8 @@
 
     <header class="header-content">
         <div class="container for-burger">
-            <a class="bmrk-logo" href="./index.html">Bookmark
+            <a class="bmrk-logo" href="./index.html">
+                Bookmark
             </a>
             <!-- 
             <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container"
@@ -214,28 +214,49 @@
 
     <footer class="footer">
         <div class="container for-footer">
-            
-        <a class="bmrk-logo " href="./index.html">Bookmark
-        </a>
 
+            <a class="bmrk-logo" href="./index.html">Bookmark
+            </a>
 
-        
-            
-                <ul class="footerNav-list">
-                    <li class="item-nav">
-                        <a class="nav-option " href="./index.html">Features</a>
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav class="main-nav">
+                    <ul class="footerNav-list">
+                        <li class="item-nav">
+                            <a class="nav-option " href="./index.html">Features</a>
+                        </li>
+                        <li class="item-nav">
+                            <a class="nav-option" href="">Pricing</a>
+                        </li>
+                        <li class="item-nav">
+                            <a class="nav-option" href="">Contact</a>
+                        </li>
+                    
+                    </ul>
+                </nav>
+
+              
+
+            </div>
+
+            <div class="social-media">
+                <ul class="media-list">
+                    <li>
+                        <a href="">Facebook
+
+                            <svg class="icon-social" width="20" height="20">
+                                <use href="images/icon-facebook.svg"></use>
+                              </svg>
+                        </a>
                     </li>
-                    <li class="item-nav">
-                        <a class="nav-option" href="">Pricing</a>
-                    </li>
-                    <li class="item-nav">
-                        <a class="nav-option" href="">Contact</a>
-                    </li>
-                    <li class="item-nav">
-                        <a class="nav-option" href="">Login</a>
+                    <li>
+                        <a href=""><svg class="icon-social" width="20" height="20">
+                            <use href="images/icon-twitter.svg"></use>
+                          </svg>Faceb</a>
                     </li>
                 </ul>
-          
+            </div>
+            
+        
        
         </div>
     </footer>
