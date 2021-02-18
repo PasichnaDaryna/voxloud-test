@@ -1,0 +1,66 @@
+.section-hero {
+    display: flex;
+    
+}
+.hero-title {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 44px;
+    color: $dark-blue;
+}
+
+.hero-buttons {
+    display: flex;
+}
+
+.button-element {
+    &:first-child {
+        margin-right: 20px;
+    }
+}
+
+.get-button  {
+    outline: none;
+    background-color: $white-buttons;
+    color: $grayish-blue;
+    border: 0;
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+
+    &:active {
+        background-color: $soft-blue;
+        color: #f7f7f7;
+    }
+
+    &:focus {
+        background-color: $soft-blue;
+        color: #f7f7f7;
+    }
+
+    &:hover {
+        background-color: $soft-blue;
+        color: #f7f7f7;
+    }
+}
+
+.hero-blocks {
+    display: flex;
+}
+
+// .hero-right {
+//     max-width: 50%;
+// }
+
+
+// .hero-left {
+// max-width: 50%;
+// }
+
+
+.hero-text {
+    text-align: left;
+    color: $grayish-blue;
+    margin-bottom: 30px;
+}

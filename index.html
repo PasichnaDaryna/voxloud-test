@@ -6,31 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
 
     <title>Challenge by Voxloud | Bookmark landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 
 <body>
 
     <header class="header-content">
         <div class="container for-burger">
-            <a class="logo-link" href="./index.html">
-                <span class="logo">
-                    <span class="studio">Bookmark</span>
-                </span>
+            <a class="bmrk-logo" href="./index.html">Bookmark
             </a>
             <!-- 
             <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container"
@@ -42,9 +32,9 @@
             </button> -->
             <div class="menu-container" id="menu-container" data-menu>
                 <nav class="main-nav">
-                    <ul class="navigation">
+                    <ul class="nav-list">
                         <li class="item-nav">
-                            <a class="nav-option current" href="./index.html">Features</a>
+                            <a class="nav-option " href="./index.html">Features</a>
                         </li>
                         <li class="item-nav">
                             <a class="nav-option" href="">Pricing</a>
@@ -53,7 +43,7 @@
                             <a class="nav-option" href="">Contact</a>
                         </li>
                         <li class="item-nav">
-                            <a class="nav-option" href="">Login</a>
+                            <button class="nav-option" href="">Login</button>
                         </li>
                     </ul>
                 </nav>
@@ -63,87 +53,120 @@
     </header>
 
     <main>
-        <section class="section-hero overlay-image">
+        <section class="section-hero">
 
-            <h1 class="hero-title">
-                A Simple Bookmark Manager
-            </h1>
-
-            <p>A clean and simple interface to organize your favourite websites. Open a new
-                browser tab and see your sites load instantly. Try it for free.</p>
-            <button class="order-button" data-modal-open>
-                Get it on Chrome
-            </button>
-            <button class="order-button" data-modal-open>
-                Get it on Firefox
-            </button>
-
+          <div class="container  hero-blocks">
+            <div class="hero-right">
+                <h1 class="hero-title">
+                    A Simple Bookmark Manager
+                </h1>
+    
+                <p class="hero-text">A clean and simple interface to organize your favourite websites. Open a new
+                    browser tab and see your sites load instantly. Try it for free.</p>
+                <ul class="hero-buttons">
+                    <li class="button-element"><button class="get-button" data-modal-open>
+                        Get it on Chrome
+                    </button></li>
+                    <li class="button-element"><button class="get-button" data-modal-open>
+                        Get it on Firefox
+                    </button></li>
+                    
+                    
+                </ul>
+               </div>
+    
+               <div class="hero-left">
+                   <img src="./images/illustration-hero.svg" alt="">
+    
+               </div>
+    
+          </div>
 
 
         </section>
+
+
+
+        <!-- features section -->
         <section>
-            <h2>
-                Features
-            </h2>
+            <div class="container">
+               <div class="features-block">
+                <h2 class="features-heading">
+                    Features
+                </h2>
+    
+                <p class="features-text">
+                    Our aim is to make it quick and easy for you to access your favourite websites.
+                    Your bookmarks sync between your devices so you can access them on the go.
+                </p>
+               </div>
+    
+    
+                <ul class="feature-options__List">
+                    <li class="option__feature-list"><a href="" class="feature-link current">Simple Bookmarking</a></li>
+                    <li class="option__feature-list"><a href="" class="feature-link">Speedy Searching</a></li>
+                    <li class="option__feature-list"><a href="" class="feature-link">Easy Sharing</a></li>
+                </ul>
 
-            <p>
-                Our aim is to make it quick and easy for you to access your favourite websites.
-                Your bookmarks sync between your devices so you can access them on the go.
-            </p>
+
+                
+
+            
+    
+            </div>
 
 
-            <ul>
-                <li>Simple Bookmarking</li>
-                <li>Speedy Searching</li>
-                <li>Easy Sharing</li>
-            </ul>
-
+            
         </section>
 
-        <section>
-            <h2>Bookmark in one click</h2>
-            <p>
-                Organize your bookmarks however you like. Our simple drag-and-drop interface
-                gives you complete control over how you manage your favourite sites.
-            </p>
-            <button>More Info</button>
+        <section class="features-blocks">
+
+            <div class="features-left">
+                <img src="./images/illustration-features-tab-1.svg" alt="">
+        </div>
+
+        <div class="features-right">
+            <h2 class="features-heading">Bookmark in one click</h2>
+        <p class="fr_block-text">
+            Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favourite sites.
+        </p>
+        <button class="get-button_feature">More Info</button>
+        </div>
         </section>
 
+        
 
-        <section>
-            <h2>Download the extension</h2>
-            <p>
+
+        <section class="wraper">
+            <h2 class="features-heading">Download the extension</h2>
+            <p class="features-text">
                 We’ve got more browsers in the pipeline. Please do let us know if you’ve
                 got a favourite you’d like us to prioritize.
             </p>
-            <ul>
-                <li>
-
-                    <!-- <svg class="icon-social">
-                        <use href="./images/logo-chrome"></use>
-
-                    </svg> -->
-                    <img src="./images/logo-chrome.svg" alt="chrome-logo">
-                    <p>Minimum version 62</p>
-                    <button>Add & Install Extension</button>
+            <ul class="d-flex justify-content-sm-between flex-wrap" id="our-ext">
+                <li class="extension-item align-self-md-start">
+                    <img class="ext-img" src="./images/logo-chrome.svg" alt="chrome-logo">
+                    <p class="version">Minimum version 62</p>
+                    <button  class="ext-button">Add & Install Extension</button>
 
                 </li>
-                <li>
-                    <img src="./images/logo-firefox.svg" alt="firefox-logo">
-                    <p>Minimum version 55</p>
-                    <button>Add & Install Extension</button>
+                <li class="extension-item align-self-md-center">
+                    <img class="ext-img" src="./images/logo-firefox.svg" alt="firefox-logo">
+                    <p class="version">Minimum version 55</p>
+                    <button class="ext-button">Add & Install Extension</button>
                 </li>
-                <li>
-                    <img src="./images/logo-opera.svg" alt="opera-logo">
-                    <p>Minimum version 46</p>
-                    <button>Add & Install Extension</button>
+                <li class="extension-item align-self-md-end">
+                    <img class="ext-img" src="./images/logo-opera.svg" alt="opera-logo">
+                    <p class="version">Minimum version 46</p>
+                    <button class="ext-button">Add & Install Extension</button>
 
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>Frequently Asked Questions</h2>
+            <h2 class="features-heading">Frequently Asked Questions</h2>
             <p>
                 Here are some of our FAQs. If you have any other questions you’d like
                 answered please feel free to email us.
