@@ -1,0 +1,65 @@
+.blue {
+    background-color: $soft-blue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+.blueCont-title {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 36px;
+    color: $bg-primary-white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.incentive {
+    font-family: $main-font;
+    color: $bg-primary-white;
+    text-align: center;
+text-transform: uppercase;
+}
+.join-form {
+    display: flex;
+    display: block;
+    text-align: center;
+    
+
+}
+
+.enter-email {
+    display: inline-block;
+    padding: 15px 16px;
+    border: 1px solid $grayish-blue;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    color: $grayish-blue;
+    background-color: $bg-primary-white;
+    outline: none;
+    margin-right: 20px;
+
+    font-family: $main-font;
+}
+
+.button-join {
+    align-items: center;
+    height: 50px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    color: $bg-primary-white;
+    background-color: $soft-red;
+    -webkit-box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    overflow: hidden;
+    border-style: none;
+    cursor: pointer;
+}
+
+
