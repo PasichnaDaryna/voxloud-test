@@ -24,14 +24,20 @@
                     <use xlink:href="./images/symbol-defs.svg#logo-bookmark"></use>
                   </svg>
             </a>
-            <!-- 
-            <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container"
-                data-menu-button>
-                <svg class="burger-button" width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon-cross" href="./images/icon-close.svg"></use>
-                    <use class="icon-menu" href="./images/icon-hamburger.svg"></use>
+            
+            <button class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button>
+                <svg class="burger-button"
+                width="40"
+                height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
+                    <use class="icon-menu" href="./images/symbol-defs.svg#icon-hamburger"></use>
+                    
                 </svg>
-            </button> -->
+            </button>
             <div class="menu-container" id="menu-container" data-menu>
                 <nav class="main-nav">
                     <ul class="nav-list">
@@ -54,7 +60,7 @@
         </div>
     </header>
 
-    <main>
+    <!-- <main>
         <section class="section-hero">
 
           <div class="container  hero-blocks">
@@ -78,7 +84,7 @@
                </div>
     
                <div class="hero-left">
-                   <img src="./images/illustration-hero.svg" alt="">
+                   <img src="./images/illustration-hero.svg" alt="illustration-hero">              
     
                </div>
     
@@ -89,7 +95,7 @@
 
 
 
-        <!-- features section -->
+        
         <section class="container">
             
                <div class="features-block">
@@ -175,13 +181,27 @@
             </p>
             <ul class="faq-list" >
                 <li  class="faq-item">
-                    What is Bookmark?
+                   <a href=" ">What is Bookmark?</a>
+                    <svg class="icon" width="12" height="10">
+                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                      </svg>
                 </li>
                 <li class="faq-item">
-                  How can I request a new browser?
+                 <a href=""> How can I request a new browser? </a>
+                  <svg class="icon" width="12" height="10">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                  </svg>
+                </li >
+                <li class="faq-item"><a href="">Is there a mobile app?</a>
+                    <svg class="icon" width="12" height="10">
+                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                      </svg>
                 </li>
-                <li class="faq-item">Is there a mobile app?</li>
-                <li class="faq-item">What about other Chromium browsers?</li>
+                <li class="faq-item"><a href="">What about other Chromium browsers?</a>
+                    <svg class="icon" width="12" height="10">
+                        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                      </svg>
+                </li>
             </ul>
 
             <button class="more-info__button">More Info</button>
@@ -202,12 +222,12 @@
 
         </button>
     </form>
+
+
 </div>
+</section>
 
-
-        </section>
-
-    </main>
+    </main> -->
 
 
 
@@ -217,28 +237,32 @@
     <footer class="footer">
         <div class="container for-footer">
 
-            <a class="bmrk-logo" href="./index.html">
-                <svg class="icon" width="200">
-                    <use href="./images/symbol-defs.svg#logo-footer"></use>
-                  </svg>
-            </a>
-
-            <div class="menu-container" id="menu-container" data-menu>
-                <nav class="main-nav">
-                    <ul class="footerNav-list">
-                        <li class="item-nav">
-                            <a class="nav-option " href="./index.html">Features</a>
-                        </li>
-                        <li class="item-nav">
-                            <a class="nav-option" href="">Pricing</a>
-                        </li>
-                        <li class="item-nav">
-                            <a class="nav-option" href="">Contact</a>
-                        </li>
-                    
-                    </ul>
-                </nav>             
-
+            <div class="footer-group">
+                <div class="logo-div">
+                    <a class="bmrk-logo" href="./index.html">
+                        <svg class="icon" width="200">
+                            <use href="./images/symbol-defs.svg#logo-footer"></use>
+                          </svg>
+                    </a>
+                </div>
+    
+                <div class="menu-container" id="menu-container" data-menu>
+                    <nav class="main-nav">
+                        <ul class="footerNav-list">
+                            <li class="item-nav">
+                                <a class="nav-option " href="./index.html">Features</a>
+                            </li>
+                            <li class="item-nav">
+                                <a class="nav-option" href="">Pricing</a>
+                            </li>
+                            <li class="item-nav">
+                                <a class="nav-option" href="">Contact</a>
+                            </li>
+                        
+                        </ul>
+                    </nav>             
+    
+                </div>
             </div>
 
 
@@ -268,6 +292,7 @@
        
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

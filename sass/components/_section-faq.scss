@@ -9,16 +9,20 @@
 
 
 .faq-item {
-    padding-top: 10px;
-    padding-bottom: 10px ;
-    font-family: $main-font;
-    font-weight: 500;
-    color: $dark-blue;
+    display: flex;
+    
     border-top: 1px solid $grayish-blue;
     padding: 1em;
+    justify-content: space-between;
+    align-items: center;
     &:last-child {
         border-bottom: 1px solid $grayish-blue;
     }
+
+    & a {font-family: $main-font;
+    font-weight: 500;
+    color: $dark-blue;
+}
 
 }
 

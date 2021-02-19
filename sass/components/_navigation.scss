@@ -8,6 +8,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+
+
+@media screen and (max-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  
+}
 }
 
 
@@ -46,8 +55,30 @@
       text-decoration: none;
     }
 
+    @media screen and (max-width: 767px) {
+      border-top: 1px solid $grayish-blue;
+      padding-top: 15px;
+    padding-bottom: 15px;
+    width: 15em;
+    justify-content: center;
+    color: $bg-primary-white;
+    font-size: $font-size;
+    text-align: center;
+
+      &:nth-child(3n) {
+        border-bottom: 1px solid $grayish-blue;
+
+      }
+  
+    }
+
     
+
+
+   
 }
+
+
 
 
 button.nav-option {
@@ -59,6 +90,16 @@ button.nav-option {
     padding: 10px 32px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+
+
+    @media screen and (max-width: 767px) {
+      width: 15em;
+      justify-content: center;
+      background-color: $dark-blue;
+      border: 3px solid $bg-primary-white;
+      border-radius: 4px;
+      padding: 10px 32px;
+  }
 
 
     &:hover,
