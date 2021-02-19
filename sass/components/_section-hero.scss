@@ -31,18 +31,23 @@
 
     &:active {
         background-color: $soft-blue;
-        color: #f7f7f7;
+        color: $bg-primary-white;
     }
 
     &:focus {
         background-color: $soft-blue;
-        color: #f7f7f7;
+        color: $bg-primary-white;
     }
 
     &:hover {
         background-color: $soft-blue;
-        color: #f7f7f7;
+        color: $bg-primary-white;
     }
+}
+
+.blue-button__Hero {
+    background-color: $soft-blue;
+    color: $bg-primary-white;
 }
 
 .hero-blocks {

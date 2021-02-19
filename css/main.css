@@ -368,8 +368,12 @@ html {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.nav-option:hover {
+  text-decoration: none;
 }
 
 button.nav-option {
@@ -393,6 +397,11 @@ button.nav-option:active {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .for-burger {
@@ -443,15 +452,20 @@ button.nav-option:active {
 }
 .get-button:active {
   background-color: #5368df;
-  color: #f7f7f7;
+  color: white;
 }
 .get-button:focus {
   background-color: #5368df;
-  color: #f7f7f7;
+  color: white;
 }
 .get-button:hover {
   background-color: #5368df;
-  color: #f7f7f7;
+  color: white;
+}
+
+.blue-button__Hero {
+  background-color: #5368df;
+  color: white;
 }
 
 .hero-blocks {
@@ -647,6 +661,11 @@ button.nav-option:active {
   font-family: Rubik;
   font-weight: 500;
   color: #252b46;
+  border-top: 1px solid #9194a1;
+  padding: 1em;
+}
+.faq-item:last-child {
+  border-bottom: 1px solid #9194a1;
 }
 
 .more-info__button {
@@ -745,8 +764,47 @@ button.nav-option:active {
           align-items: center;
 }
 
+.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footerNav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-item:first-child {
+  margin-right: 1em;
+}
+
+.social-option {
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  fill: #fff;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+footer .icon-logo {
+  fill: white;
 }/*# sourceMappingURL=main.css.map */
