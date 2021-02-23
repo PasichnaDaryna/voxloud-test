@@ -28,15 +28,25 @@
 
 
 .item-nav {
+   
     margin-right: 50px;
 
     &:last-child {
       margin-right: 0;
     }
 
+
+    @media screen and (max-width: 768px) {
+     margin-right: 0;
+
+      
+    }
+
    
 }
-
+  .item-nav button {
+    border: 2px solid $grayish-blue
+  }
 
 .nav-option {
     padding-top: 32px;
@@ -47,8 +57,9 @@
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
+    
 
-    line-height: 1.14;
+    
     text-transform: uppercase;
 
     &:hover {
@@ -56,6 +67,7 @@
     }
 
     @media screen and (max-width: 767px) {
+      
       border-top: 1px solid $grayish-blue;
       padding-top: 15px;
     padding-bottom: 15px;
@@ -64,6 +76,7 @@
     color: $bg-primary-white;
     font-size: $font-size;
     text-align: center;
+    display: block;
 
       &:nth-child(3n) {
         border-bottom: 1px solid $grayish-blue;
@@ -81,7 +94,7 @@
 
 
 
-button.nav-option {
+ .nav-option-btn  {
 
     background-color: $soft-red;
     color: $bg-primary-white;
@@ -93,12 +106,16 @@ button.nav-option {
 
 
     @media screen and (max-width: 767px) {
-      width: 15em;
+      max-width: 100%;
       justify-content: center;
       background-color: $dark-blue;
-      border: 3px solid $bg-primary-white;
+      border-top: 1px solid $grayish-blue;
       border-radius: 4px;
       padding: 10px 32px;
+
+      
+
+     
   }
 
 

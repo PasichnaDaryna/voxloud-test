@@ -1,25 +1,33 @@
-.for-burger  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
+.for-burger {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 
 
 
 
 
-
-.menu-container {
+header .menu-container {
     @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     background-color: $dark-blue;
     opacity: 95%;
     padding: 40px;
-    top: 35%;
+    top: 37%;
     left: 0;
     width: 100%;
+   
 }
 }
 

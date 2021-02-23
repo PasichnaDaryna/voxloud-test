@@ -38,19 +38,7 @@
 //   fill: $accent-color;
 // }
 
-.for-burger {
-  @media screen and (max-width: 767px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
 
 .nav-list {
   list-style: none;
@@ -74,13 +62,3 @@
 }
 
 
-// .menu-container {
-//   @media screen and (max-width: 767px) {
-//     position: absolute;
-//     background-color: #fff;
-//     padding: 40px;
-//     top: 100%;
-//     left: 0;
-//     width: 100%;
-// }
-// }

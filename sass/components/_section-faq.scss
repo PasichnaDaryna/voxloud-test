@@ -1,3 +1,20 @@
+.faq-cont {
+      @media screen and (max-width: 767px) {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          
+      }
+
+
+      @media screen and (min-width: 768px) {
+            display: flex;
+          justify-content: center;
+          flex-direction: column;
+}
+}
+
+
 .faq-list {
     display: flex;
     flex-direction: column;
@@ -27,16 +44,35 @@
 }
 
 .more-info__button {
+    display: inline-block;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+
     outline: none;
     color: #fff;
     background-color: #5368df;
     border: 0;
     padding: 10px 22px;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    display: block;
-   text-align: center;
-   margin-right: auto;
-   margin-left: auto;
+    
+
+
+   @media screen and (max-width: 767px) {
+       margin-bottom: 2em;
+       margin-left: auto;
+       margin-right: auto;
+       
+   }
+}
+
+
+
+
+.button-wrapper {
+  display: flex;	
+  justify-content: center;
 }
